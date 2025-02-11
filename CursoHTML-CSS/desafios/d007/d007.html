@@ -6,8 +6,12 @@
     <title>Desafio 07</title>
 </head>
 <body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Tente diminuir a janela do navegador para ver o que acontece!</p>
     <picture>
-        <img src="" alt="">
+        <source media="(max-width: 800px)" srcset="imagens/paisagem-p.png">
+        <source media="(max-width: 1250px)" srcset="imagens/paisagem-m.png">
+        <img src="imagens/paisagem-g.png" alt="Imagem completa">
     </picture>
 </body>
 </html>
