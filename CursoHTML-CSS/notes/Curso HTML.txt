@@ -21,9 +21,14 @@
 * Seta direita = &rarr;
 * Seta abaixo = &darr;
 
+--- EMOJIS ---
+
 -Emojis também podem ser adicionados ao HTML, para pesquisa de emojis é recomendado o site emojipedia.org
 -Todo emoji tem um código Unicode, exemplo: U+1F604
 -Para utilizar o emoji, substituímos "U+" por "&#x" ficando: &#x1F604
+
+--- IMAGENS ---
+
 -Ao utilizar imagens devemos tomar cuidado com os direitos autorais, alguns exemplos de sites com imagens com domínio público são:
 
 * UnSplash
@@ -40,6 +45,9 @@
 -A vantagem do PNG em relação ao JPEG é a capacidade de configurar a opacidade de cada pixel, possibilitando transparências
 -A compactação recomendada para imagens JPEG é entre 30% e 50% para evitar perda de qualidade notável
 -Para adicionar uma imagem usamos a tag <img src="nome do arquivo, caminho ou link da imagem" alt="descrição da imagem">
+
+--- ALTERANDO O FAVICON ---
+
 -Podemos alterar o Favicon da página (o ícone ao lado do título quando abrimos uma aba)
 -Sites úteis para pesquisar favicons:
  
@@ -64,6 +72,9 @@
 -Para escrever abreviações e informar o seu significado usa-se a tag <abbr> exemplo: <abbr title="Hyper Text Markup Language">HTML</abbr>
 -Para escrever texto de trás pra frente (direita para esquerda) usa-se a tag <bdo></bdo> com o parâmetro dir="" exemplo: <bdo dir="rtl">Este texto todo está invertido no formato RIGHT-TO-LEFT.</dbo>
 -O parâmetro dir="rtl" representa RIGHT-TO-LEFT e o parâmetro dir="ltr" representa LEFT-TO-RIGHT
+
+--- LISTAS ORDENADAS, NÃO ORDENADAS E DE DEFINIÇÕES ---
+
 -As listas em HTML podem ser Ordenadas ou Não Ordenadas
 -As listas Ordenadas são as que a ordem dos itens dentro dela precisa ser respeitada, e a tag usada é <ol></ol>
 -Todos os itens dentro de uma lista Ordenada ou Não Ordenada são representados pela tag <li></li>
@@ -117,6 +128,8 @@
 	<dd>Linguagem de programação para criar interatividades em sites.</dd>
 </dl>
 
+--- HYPERLINKS ---
+
 -Para criar um hyperlink, devemos criar âncoras usando a tag <a href="nomedolink.com">Mensagem para ser clicada</a> 
 -Podemos usar o parâmetro hreflang="" para indicar qual em qual idioma está o site para qual o link está encaminhando.
 
@@ -160,6 +173,8 @@ Exemplo: <a href="arquivos/meulivro.pdf" download="meulivro.pdf" type="applicati
  * image/jpeg
  * image/png
 
+--- IMAGENS FLEXÍVEIS ---
+
 - Quando criamos um site, é importante que ele tenha a capacidade de se adaptar ao tamanho da tela em que está sendo aberto. Neste caso devemos usar Imagens Flexíveis
 - Para usar uma imagem flexível, precisamos da tag <picture></picture> e da tag <source media="(max-width: 1050px)" srcset="caminho ou nome do arquivo" type="image/png">
 Exemplo:
@@ -171,14 +186,34 @@ Exemplo:
 
 - No código acima temos uma imagem fonte (imagem-grande.png) e de baixo pra cima vamos diminuindo o tamanho máximo para exibição de cada uma das versões desta imagem (a ordem de tamanhos deve ser respeitada ou a imagem não vai se comportar da maneira correta)
 
+--- ÁUDIO ---
 
+-Para adicionar áudios ao site usamos a tag <audio></audio> e algumas tags <source src="" type="">
+-Os principais atributos da tag <audio> são:
 
+ * preload - Indica se o áudio será pré-carregado ou não e aceita três valores:
+ 	* metadata - Vai carregar apenas as informações sobre o arquivo (tamanho, tempo informações de direitos, etc)
+ 	* none - Não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução
+ 	* auto (padrão) - Vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play
+ * controls - Vai apresentar o player na tela. Caso não seja colocado na tag <audio>, o controle será transparente e o usuário não poderá interagir com ele
+ * autoplay - Quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada
+ * loop - Vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução
 
+-Dentro da tag <audio></audio> adicionamos vários <source> com formatos diferentes do mesmo áudio. Caso o primeiro formato listado falhe em ser reproduzido, os seguintes tentarão ser executados até que algum funcione, ou uma mensagem de erro (parágrafo criado abaixo do último source) deve ser exibida caso nenhum consiga ser reproduzido
 
+--- VÍDEOS ---
 
+-Para adicionar um vídeo no site, caso a mídia esteja hospedada localmente, usamos a tag <video></video> com algumas tags <source> dentro, seguindo o mesmo conceito dos vários formatos que usamos para tentar reproduzir um áudio e uma mensagem de erro (parágrafo) caso nenhum dos formatos seja reproduzido com sucesso
+-Alguns atributos importantes da tag <video> são:
 
+ * width - Vai indicar a largura que o vídeo vai ter na tela. Por exemplo, 600px
+ * poster - Configura uma imagem que vai aparecer como uma capa (thumbnail). 
+ * controls - Vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão os controles não aparecerão
+ * autoplay - Diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.
 
-
+-Os formatos suportados são MPEG (.mp4), WEBM (.webm) e OGG (.ogv)
+-O formato m4v desenvolvido pela Apple é utilizado em mídias comercializadas pela iTunes Store, e o principal motivo para criá-lo foi impedir a distribuição não autorizada dos vídeos, sendo protegidos por FairPlay DRM (Gerenciamento de Direitos Digitais)
+-Para economizar recursos, ao invés de hospedar seus vídeos localmente, podemos incorporar vídeos de sites como YouTube e Vimeo
 
 
 
