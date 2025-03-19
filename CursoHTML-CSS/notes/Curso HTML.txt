@@ -57,20 +57,119 @@
 -Para adicionar o efeito de marca texto usa-se a tag <mark></mark>
 -Para adicionar o efeito de "arquivo apagado riscado por cima" usa-se a tag <del></del>
 -Para sublinhar um texto usa-se a tag <ins></ins>
--
+-Para escrever um texto sobrescrito (ex: números com potências) ou texto subscrito (ex: representação da molécula de água H2O) usam-se as tags <sup></sup> e <sub></sub>
+-Para adicionar um trecho de código para ser exibido na página usa-se a tag <code></code> dentro da tag <pre></pre> que vai formatar o código para ser exibido corretamente
+-Para adicionar citações usa-se a tag <q></q> (quote)
+-Para adicionar citações maiores, em bloco, usa-se a tag <blockquote></blockquote>
+-Para escrever abreviações e informar o seu significado usa-se a tag <abbr> exemplo: <abbr title="Hyper Text Markup Language">HTML</abbr>
+-Para escrever texto de trás pra frente (direita para esquerda) usa-se a tag <bdo></bdo> com o parâmetro dir="" exemplo: <bdo dir="rtl">Este texto todo está invertido no formato RIGHT-TO-LEFT.</dbo>
+-O parâmetro dir="rtl" representa RIGHT-TO-LEFT e o parâmetro dir="ltr" representa LEFT-TO-RIGHT
+-As listas em HTML podem ser Ordenadas ou Não Ordenadas
+-As listas Ordenadas são as que a ordem dos itens dentro dela precisa ser respeitada, e a tag usada é <ol></ol>
+-Todos os itens dentro de uma lista Ordenada ou Não Ordenada são representados pela tag <li></li>
+-Dentro da tag <ol></ol> podemos usar os parâmetros type="" e start="", que representam respectivamente o tipo de contagem a ser feito pela lista e a partir de qual ponto deve iniciar a contagem. Exemplo:
 
+<ol type="I" start="5">
+	<li>texto de exemplo</li>
+</ol>  Nesta lista os itens serão numerados com algarismos romanos e serão contados a partir de 5 (V, VI, VII...)
 
+-Dentro do parâmetro type="" podemos usar as seguintes opções:
 
+ * 1 - Valor padrão. Cria listas numeradas. Ex: 1,2,3,4...
+ * A - Cria listas alfabéticas com letras maiúsculas. Ex: A,B,C,D...
+ * a - Cria listas alfabéticas com letras minúsculas. Ex: a,b,c,d...
+ * I - Cria listas com algarismos romanos maiúsculos. Ex: I,II,III,IV...
+ * i - Cria listas com algarismos romanos minúsculos. Ex: i,ii,iii,iv...
 
+-As listas Não Ordenadas apresentam seus itens sem nenhuma representação de contagem e servem para organização de itens que não necessitam de uma ordem ou contagem específica
+-Para criar uma lista Não Ordenada usa-se a tag <ul></ul> e seus itens são representados pela tag <li></li>
+-O parâmetro type="" nas listas Não Ordenadas tem as seguintes opções de exibição:
 
+ * disc - padrão. Uma bola preta totalmente pintada
+ * circle - Uma bola com borda preta e sem preenchimento
+ * square - Um pequeno quadrado preto totalmente pintado
 
+-É possível criar listas dentro de outras listas, inclusive misturando Ordenadas e Não Ordenadas, para uma organização mais específica, exemplo:
 
+<ol>
+	<li>Item 1</li>
+	<li>Item 2</li>
+	<ol type="a">
+		<li>Item 2.1</li>
+		<li>Item 2.2</li>
+		<li>Item 2.3</li>
+	</ol>
+	<li>Item 3</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
+</ol>
 
+-Existem também as listas de Definições, que são listas sem demarcadores e que normalmente é usada com um formato semelhante a um dicionário, com termos e seus significados representados logo abaixo. A tag usada é <dl></dl> , a tag dos termos é <dt></dt> e a tag das descrições é <dd></dd> . Exemplo:
 
+<dl>
+	<dt>HTML</dt>
+	<dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
 
+	<dt>CSS</dt>
+	<dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
 
+	<dt>JavaScript</dt>
+	<dd>Linguagem de programação para criar interatividades em sites.</dd>
+</dl>
 
+-Para criar um hyperlink, devemos criar âncoras usando a tag <a href="nomedolink.com">Mensagem para ser clicada</a> 
+-Podemos usar o parâmetro hreflang="" para indicar qual em qual idioma está o site para qual o link está encaminhando.
 
+Exemplo: <a href="www.google.com" hreflang="em">Clique aqui para abrir o google</a>
+
+-Podemos usar o parâmetro target="" para controlar onde o site destino do hyperlink, para este parâmetro temos as seguintes opções:
+
+ * _blank - Vai abrir o link em uma nova janela em branco
+ * _self - Vai abrir o link na janela ou frame atual (padrão)
+ * _top - Vai desfazer todos os frames e abrir o destino no navegador completo
+ * _parente - Similar ao uso do _top em uma referência à janela mãe
+ * nome-do-frame - Caso esteja usando frames, indicar o nome da janela a abrir
+
+-As duas opções mais utilizadas são _blank e _self, as outras estão praticamente em desuso
+-O atributo rel="" serve para indicar qual a natureza do destino, e ele aceita diversos valores, alguns deles são:
+
+ * next - Indica que o link é para a próxima parte do documento atual
+ * prev - Indica que o link é para a parte anterior do documento atual
+ * author - Indica que é um link para o site do autor do artigo atual
+ * external - Indica que é um link para outro site que não faz parte do site atual
+ * nofollow - Indica que é um link para um site não endossado, como um link pago, ou links inseridos por terceiros (fóruns ou áreas de comentários). A principal utilidade é fazer com que os motores de busca, como o Google, ignorem estes links e não associem eles ao seu site
+
+-Para criar links de download de arquivos usamos a tag <a> com o parâmetro download="" e o parâmetro type=""
+
+Exemplo: <a href="arquivos/meulivro.pdf" download="meulivro.pdf" type="application/pdf">
+		Baixe aqui o PDF do meu livro
+	 </a>
+
+- Alguns dos media types mais utilizados no dia-a-dia são:
+
+ * application/zip
+ * text/html
+ * text/css
+ * text/javascript
+ * video/mp4
+ * video/H264
+ * video/JPEG
+ * audio/aac
+ * audio/mpeg
+ * font/ttf
+ * image/jpeg
+ * image/png
+
+- Quando criamos um site, é importante que ele tenha a capacidade de se adaptar ao tamanho da tela em que está sendo aberto. Neste caso devemos usar Imagens Flexíveis
+- Para usar uma imagem flexível, precisamos da tag <picture></picture> e da tag <source media="(max-width: 1050px)" srcset="caminho ou nome do arquivo" type="image/png">
+Exemplo:
+	<picture>
+        	<source media="(max-width: 750px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        	<source media="(max-width: 1050px)" srcset="imagens/imagem-media.png" type="image/png">
+        	<img src="imagens/imagem-grande.png" alt="Imagem flexível">
+	</picture>
+
+- No código acima temos uma imagem fonte (imagem-grande.png) e de baixo pra cima vamos diminuindo o tamanho máximo para exibição de cada uma das versões desta imagem (a ordem de tamanhos deve ser respeitada ou a imagem não vai se comportar da maneira correta)
 
 
 
