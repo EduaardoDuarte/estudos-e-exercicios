@@ -1,0 +1,83 @@
+-- HTML --
+
+-Para criar um parágrafo usamos a tag <p></p>
+-Para executar uma quebra de linha (break row) utilizamos a tag <br> no local do texto onde a linha deve quebrar.
+-Para representar no html os colchetes angulares < e > utilizamos os caracteres especiais &lt; (less than) e &gt; (greater than).
+-Existem vários outros símbolos que podem ser representados por códigos no html, exemplos:
+
+* Espaço em branco = &nbsp;
+* Marca registrada = &reg;
+* Copyright = &copy;
+* Trade Mark = &trade;
+* Euro = &euro;
+* Libra (pound) = &pound;
+* Yen = &yen;
+* Cent = &cent;
+* Vazio = &empty;
+* Soma = &sum;
+* Delta = &Delta;
+* Seta esquerda = &larr;
+* Seta acima = &uarr;
+* Seta direita = &rarr;
+* Seta abaixo = &darr;
+
+-Emojis também podem ser adicionados ao HTML, para pesquisa de emojis é recomendado o site emojipedia.org
+-Todo emoji tem um código Unicode, exemplo: U+1F604
+-Para utilizar o emoji, substituímos "U+" por "&#x" ficando: &#x1F604
+-Ao utilizar imagens devemos tomar cuidado com os direitos autorais, alguns exemplos de sites com imagens com domínio público são:
+
+* UnSplash
+* Pexels
+* FreePik
+* Rawpixel
+* Pixabay
+* Libreshot
+* Wikimedia Commons
+
+-Existem diversos formatos de imagem, porém os 2 mais populares utilizados em páginas de sites são: JPEG e PNG
+-JPEG é um formato de imagem focado em ter um tamanho bem reduzido, facilitando o carregamento e exibição da página
+-PNG é um formato de imagem criado pela W3C (mesmo órgão que gerencia a linguagem HTML) que também é um formato compactado, mas não tanto quando o JPEG
+-A vantagem do PNG em relação ao JPEG é a capacidade de configurar a opacidade de cada pixel, possibilitando transparências
+-A compactação recomendada para imagens JPEG é entre 30% e 50% para evitar perda de qualidade notável
+-Para adicionar uma imagem usamos a tag <img src="nome do arquivo, caminho ou link da imagem" alt="descrição da imagem">
+-Podemos alterar o Favicon da página (o ícone ao lado do título quando abrimos uma aba)
+-Sites úteis para pesquisar favicons:
+ 
+ * IconArchive
+ * favicon.cc (desenhar o próprio favicon)
+ * favicon.io (criar favicons com suas próprias imagens)
+
+-Para alterar o Favicon adicionamos a tag <link rel="icon" href="nome do arquivo ou caminho" type="image/x-icon"> dentro da tag <head></head>
+-Alguns dos formatos aceitos de Favicons são ICO, PNG e SVG
+-Para criar títulos em HTML usamos as tags <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5> e <h6></h6>
+-Os títulos seguem uma hierarquia, sendo h1 o maior deles e que deve ser utilizado para títulos importantes e temas principais
+-A tag <address></address> serve para dar destaque a um endereço físico ou informações de contato e exibe o conteúdo todo em itálico
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
