@@ -1,0 +1,4 @@
+--- CSS ---
+
+-A sigla CSS significa Cascading Style Sheets, e elas são as responsáveis pelo estilo das páginas, ou seja, a aparência
+-
