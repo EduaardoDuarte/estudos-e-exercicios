@@ -1,4 +1,77 @@
 --- CSS ---
 
 -A sigla CSS significa Cascading Style Sheets, e elas são as responsáveis pelo estilo das páginas, ou seja, a aparência
--
+-Temos 3 maneiras de implementar CSS em um projeto: Inline style, Internal style e External style
+-Todas as declarações feitas em CSS devem ser separadas e terminar em ;
+
+--- INLINE STYLE ---
+
+-Este formato é utilizado para alterar especificamente todos os itens dentro de uma tag específica e ele é implementado como parâmetro dentro da própria tag.
+
+Exemplo: 
+	<body style="background-color: lightskyblue; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+    		<h1 style="color: mediumblue; background-color: dodgerblue; font-size: 1.5em;">Capítulo 1</h1>
+    		<h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.1</h2>
+    		<p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur velit quae aut perferendis assumenda molestiae enim rerum 			atque, 	consectetur quod, deleniti neque vero dicta tenetur illum vel officiis dolorem vitae.</p>
+    		<h2 style="color: darkred; font-size: 1.2em;">Capítulo 1.2</h2>
+   	 	<p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, rerum obcaecati soluta possimus magnam iusto autem 			similique accusamus at eius excepturi facere incidunt molestias harum ipsa ab voluptates natus itaque.</p>
+    		<h1 style="color: mediumblue; font-size: 1.5em; background-color: dodgerblue;">Capítulo 2</h1>
+    		<h2 style="color: darkred; font-size: 1.2em;">Capítulo 2.1</h2>
+    		<p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis iste illo nam, quis, molestias voluptates cumque animi 			quod dolorum, distinctio impedit nostrum deleniti aliquam dolores asperiores magnam sequi totam?</p>
+	</body>
+
+-O Inline style é utilizado para casos muito isolados onde é necessário fazer uma mudança pontual em uma tag específica e não deve ser utilizado para todo o estilo da página, por questões de praticidade, por exemplo: Em caso de manutenção ou mudança de estilo a pedido do cliente será consumido muito tempo até alterar tudo
+
+--- INTERNAL STYLE ---
+
+-Para aplicar estilos desta maneira, adicionamos uma tag <style></style> dentro da tag <head></head> e colocamos ali as declarações de CSS. Podem ser alteradas todas as tags de um tipo específico, por exemplo, todos os <h1>, todos os <p> ou o <body> por completo
+
+Exemplo:
+	<head>
+    		<meta charset="UTF-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<title>Estilos Locais / Internos</title>
+    		<style>
+        		body {
+            		background-color: lightskyblue;
+            		font-family: Arial, Helvetica, sans-serif;
+            		font-size: 20px;
+        		}
+
+        		h1 {
+            		color: darkblue;
+            		background-color: dodgerblue;
+        		}
+
+        		h2 {
+            		color: darkred;
+        		}
+
+        		p {
+            		text-align: justify;
+        		}
+    		</style>
+	</head>
+
+-Por mais que os Internal style alterem todas as tags de um tipo ao mesmo tempo, caso haja uma aplicação Inline em uma tag específica ela vai prevalecer sobre o Internal
+
+--- EXTERNAL STYLE ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
