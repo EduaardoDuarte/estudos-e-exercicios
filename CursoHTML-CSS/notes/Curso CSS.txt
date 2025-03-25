@@ -91,9 +91,16 @@ Exemplo:
 	}
 
 
+--- CORES ---
 
-
-
+-A cor azul é a cor com menor % de rejeição entre todas as cores, sendo considerada uma cor segura para trabalhar em designs
+-Cada cor é associada a algum segmento/ambiente/sensação (checar tabela de cores no pdf nº13 - https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/13%20-%20Cores.pdf)
+-Fundos escuros com letras brancas (normalmente preto com branco) devem ser utilizados em páginas com pouco conteúdo para ser lido, por exemplo a página inicial da Netflix.com, que ao mudar para páginas que contenham mais texto e informações, as cores se invertem para fundo branco e letras pretas.
+-Dentro da teoria das cores, usamos como base o círculo cromático, que organiza as cores em grupos que facilitam o trabalho
+-As 3 cores em destaque são as cores primárias - Amarelo, Vermelho, Azul
+-Da junção de 2 cores primárias temos as cores secundárias - Laranja, Violeta/Roxo, Verde
+-Da junção de uma cor primária e uma cor secundária temos as 6 cores terciárias - Amarelo-esverdeado (amarelo+verde), Amarelo-alaranjado (amarelo+laranja), Vermelho-alaranjado (vermelho+laranja), Vermelho-arroxeado (vermelho+roxo), Azul-arroxeado (azul+roxo), Azul-esverdeado (azul+verde)
+-
 
 
 
