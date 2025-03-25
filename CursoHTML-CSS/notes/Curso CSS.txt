@@ -100,6 +100,32 @@ Exemplo:
 -As 3 cores em destaque são as cores primárias - Amarelo, Vermelho, Azul
 -Da junção de 2 cores primárias temos as cores secundárias - Laranja, Violeta/Roxo, Verde
 -Da junção de uma cor primária e uma cor secundária temos as 6 cores terciárias - Amarelo-esverdeado (amarelo+verde), Amarelo-alaranjado (amarelo+laranja), Vermelho-alaranjado (vermelho+laranja), Vermelho-arroxeado (vermelho+roxo), Azul-arroxeado (azul+roxo), Azul-esverdeado (azul+verde)
+-Ao dividirmos o círculo cromático ao meio, temos as cores frias (lado do azul, verde, roxo etc) e as cores quentes (lado do amarelo, laranja, vermelho, etc)
+-Uma paleta de cores normalmente tem entre 3 a 5 cores, mas isso não é uma regra fixa, existindo a possibilidade de trabalhar com diferentes tons de uma única cor, ou adicionar alguma cor a mais
+-Caso o cliente do projeto tenha uma logo da empresa, ela deve ser importante para a montagem da paleta
+-As CORES COMPLEMENTARES são as cores completamente opostas no círculo cromático, ao fazer uma ligação em linha reta de um lado ao outro do círculo podemos achar as cores complementares de cada cor
+-As CORES ANÁLOGAS são as cores ao lado da cor escolhida como referência (esquerda e direita) e são cores que apresentam um contraste muito pequeno por se encontrarem vizinhas no círculo
+-Uma possibilidade de paleta de cores é utilizar das cores análogas e de uma cor complementar em conjunto, criando uma paleta com harmonia e com possibilidade de contraste
+-As CORES ANÁLOGAS RELACIONADAS funcionam da seguinte maneira: selecionamos 2 cores vizinhas, ignoramos uma cor imediatamente ao lado e pegamos a próxima, formando uma paleta de 2 cores semelhantes e 1 cor com contraste leve
+-As CORES INTERCALADAS são uma possibilidade de paleta que pega 1 cor, ignora as 2 cores vizinhas e pega as 2 próximas cores, formando uma paleta com contraste entre todas as cores
+-As CORES TRIÁDICAS são representadas por triângulos, pegamos uma cor, pulamos 3 cores, pegamos a próxima e repetimos o processo para fechar um triângulo perfeito
+-As CORES EM QUADRADO funcionam de maneira semelhante às triádicas, porém pulamos 2 cores ao invés de 3, até formarmos um quadrado
+-As CORES TETRÁDICAS são formadas da seguinte forma: escolhemos uma cor e seu extremo oposto, depois escolhemos uma segunda cor e seu extremo oposto também, assim formando uma paleta de 4 cores
+-A MONOCROMIA utiliza de apenas uma cor e vai trabalhando a saturação e o brilho dessa cor para gerar outros tons
+
+
+--- REPRESENTAR CORES DENTRO DO CSS ---
+
+-Para representar cores dentro do CSS temos as seguintes opções:
+
+*Nome - digitar o nome da cor (é bem limitado em possibilidades de cores) exemplo: blue;
+*Código Hexadecimal - utilizando o código de 6 dígitos formado por algarismos hexadecimais (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F) exemplo: #0000ff;
+*RGB (Red, Green, Blue) - utiliza os valores de vermelho, verde e azul usados para formar a cor específica. Exemplo: rgb(0,0,255);
+*HSL (Hue, Saturation, Luminosity) - utiliza os valores de matiz, saturação e luminosidade. Exemplo: hsl(240, 100%, 50%);
+-O próprio VsCode possui uma ferramenta para facilitar a seleção de cores, ao passar o mouse em cima de uma cor que esteja no código, uma janela se abre com um seletor de cores e ao clicar no título ele converte para todos os 3 tipos de códigos (rgb, hsl e hexadecimal)
+
+OBS: todos os exemplos são formas diferentes de representar a mesma cor (azul)
+
 -
 
 
