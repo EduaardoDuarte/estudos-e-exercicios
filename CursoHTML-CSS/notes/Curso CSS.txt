@@ -126,7 +126,52 @@ Exemplo:
 
 OBS: todos os exemplos são formas diferentes de representar a mesma cor (azul)
 
--
+--- CRIAR PALETAS DE CORES ---
+
+-Sites úteis para criação de paletas de cores:
+
+*color.adobe.com - contém diversas ferramentas para auxílio de criação de paletas de forma gratuita, fornece os códigos de todas as cores e também conta com função de extração de cores de imagens prontas para utilização em outros projetos e criação de degradês
+
+*paletton.com - contém ferramentas para criação de paletas e possui a função de simulação de uso da paleta em uma página exemplo
+
+*coolors.co - contém um criador de paletas útil para quem está precisando de alguma ideia inicial
+
+*Extensão Colorzilla - permite extrair cores de páginas da web apenas passando o cursor em cima delas
+
+--- EXTRAIR CORES DE IMAGENS ---
+
+-Para extração de cores usando o gimp: tirar print ou salvar a imagem que contém a cor, usar a ferramenta de conta gotas e clicar sobre a cor desejada, após isso ao clicar no quadrado que extraiu a cor, uma janela com todas as informações sobre esta cor vai se abrir
+-Para extração de cores de páginas da web usando a extensão Colorzilla: informa em tempo real as cores conforme o usuário passa o cursor por cima da cor na página da web
+
+--- CRIANDO DEGRADÊ ---
+
+-Para criar um degradê no CSS utilizamos o comando: backgound-image: linear-gradiente(); - dentro dos parênteses devemos informar se ele é da esquerda para direita (to right), da direita para a esquerda (to left), para cima (to top) ou para baixo (to bottom) ou se possui algum ângulo específico que o degradê deve se comportar (90deg) e as cores separadas por vírgulas. Podemos também incluir uma porcentagem ao lado de cada cor para determinar o espaço ocupado por ela no degradê. Exemplo:
+
+<head>
+     <style>        
+        body {
+            background-image: linear-gradient(to right, #3198E2 10%, #6D59C0, #B93590, #E33F5F, #FDD579);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+-Para a criação de uma configuração global para as CSS usamos o seguinte comando:
+
+* {
+            height: 100%;
+        }
+
+-Para fixar o degradê no fundo da tela e evitar que ele mexa com a barra de rolagem usamos o seguinte comando:
+
+background-attachment: fixed;
+
+-Para tornar um degradê em formato radial (circular) usamos o comando:
+
+background-image: radial-gradient(circle);
+
+
+
 
 
 
