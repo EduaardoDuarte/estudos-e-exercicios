@@ -170,7 +170,25 @@ background-attachment: fixed;
 
 background-image: radial-gradient(circle);
 
+--- CSS ---
 
+-Declarações úteis de CSS com exemplos:
+
+*background-color: #ffffff; - determina a cor de fundo
+*border-radius: 10px; - determina o arredondamento das pontas do item selecionado
+*box-shadow: 5px 5px 15px rgba(12,12,12, 0.500); - cria uma sombra ao redor do item escolhido e determina seu tamanho e cores
+*width: 500px; - determina a largura do item selecionado
+*height: 500px; - determina a altura do item selecionado
+*padding: 10px; - determina o espaçamento das bordas do quadro
+*margin: auto; - faz com que o item selecionado permaneça ao centro da tela mesmo quando alterado o tamanho da janela do navegador
+*text-align: justify; - faz com que o texto dentro do item selecionado fique compacto e alinhado
+*color: #ffffff; - determina a cor do item selecionado (no caso de um <h1>,<h2>,<p>,etc vai alterar a cor das letras deles)
+*background-image: linear-gradiente(to right, #ffffff, #ffffff); - cria um degradê ao fundo da tela, determina o sentido ou ângulo que ele vai se desenvolver e escolhe a transição de cores que será feita
+*font-family: Arial, Helvetica, sans-serif; - determina a fonte do item selecionado (pode ser usado nas configurações globais para alterar a página toda)
+
+--- FONTES ---
+
+-
 
 
 
