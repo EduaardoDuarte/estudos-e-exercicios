@@ -188,7 +188,18 @@ background-image: radial-gradient(circle);
 
 --- FONTES ---
 
--
+-Durante a criação de uma fonte, normalmente se começa pela letra 'x' minúscula, e a altura de todas as letras minúsculas é baseada nela (altura-x)
+-As outras medidas das fontes são: Altura das maiúsculas, ascendente (altura que sobra para cima da altura-x da letra), descendente (altura que sobra para baixo da altura-x da letra), e a somatória de tudo isso resulta na medida Corpo
+-As perninhas na base de algumas letras servem para auxiliar na leitura e se chamam serifa. Nem todas as fontes são serifadas
+-Algumas das partes encontradas nas letras de diversas fontes são: Haste (traço vertical), filete (traço horizontal), vértice, esporão, arco, terminal, pé, braço, perna, espinha, barriga, olho, orelha e cauda
+-Algumas fontes possuem uma família tipográfica, que representam variações de aparência de uma mesma fonte. ex: normal, negrito, extranegrito
+-Categorias de fontes:
+
+*Serifadas - fontes com serifa
+*Sans-serif - fontes sem serifa
+*Monoespaçadas - fontes que utilizam o mesmo espaçamento lateral para todos os caracteres independente da letra utilizada
+*Handwriting - fontes que lembram a escrita à mão
+*Display - fontes que não se preocupam em seguir nenhuma das regras das fontes acima, normalmente sendo fontes comemorativas, de títulos de filme e etc
 
 
 
